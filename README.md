@@ -1,8 +1,11 @@
 # Project-One
 
-john was here
+Group # 1 Members:
 
-Mo was here
+Monique
 
+Ashweej
 
+Ethol
 
+John
