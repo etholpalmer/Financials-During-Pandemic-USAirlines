@@ -12,11 +12,13 @@ Monique
 
 Ashweej
 
-Motivation :
+Motivation:
 
-1.	Evaluation of commercial airlines and their stocks during and after the COVID 19 Pandemic.
+1.  Available data on Personal Savings and Expenditure of the American Population.
 
-2.	Evaluate travel tourism trends and their effect on airline stocks.
+2.	Evaluation of NYSE Arca Airline Index during and after the COVID-19 Pandemic.
+
+3.	Evaluate travel tourism trends and their effect on airline stocks.
 
 Questions & Data:
 
@@ -24,7 +26,9 @@ Questions & Data:
 
 2.	How long will it take commercial airlines to bounce back?
 
-3.	What will change after Covid-19? What are the key factors that will affect the financial forecast of commercial airline stocks during and post Covid-19 Pandemic.
+3.	What will change after COVID-19? What are the key factors that will affect the financial forecast of 
+commercial airline stocks during and post COVID-19 Pandemic.
+
 
 Process: Data Cleanup & Exploration
 
@@ -32,7 +36,7 @@ Process: Data Cleanup & Exploration
 
 2.	Collate historical financial data from the top ten commercial airlines.
 
-3.	Collect and identify Covid 19 stressors and their effect on the global market and stocks.
+3.	Collect and identify COVID-19 stressors and their effect on the global market and stocks.
 
 4.	Clean up financial data.
 
