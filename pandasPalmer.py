@@ -80,6 +80,9 @@ def CreateDataFrame(file_name, idx=None, remove_nulls=True):
 
     return df
 
+Is_Iterable = lambda objX: ('__getitem__' in dir(objX) or '__iter__' in dir(objX))
+unzip_list  = lambda zlst: list(zip(*zlst))
+
 from datetime import datetime
 def Get_Qtr(xdate:datetime):
     """ This function takes various datetime objects and returns the Quarter associated with the values passed in
@@ -112,27 +115,32 @@ def Get_Qtr(xdate:datetime):
         q = (d.month+2)//3
         y = d.year
         return (f"{y}Q{q}")
-def Get_Date(xdate:datetime):
+def Get_Date(xdate:datetime=None):
     """ This function takes various datetime objects and returns the Date associated with the values passed in.
         So for an array, it will return an array of datetime dates.  If a single value was passed the
         a single date will be returned."""
     if xdate is None:
         return None
 
-    print(f'{xdate.mro}')
+    if 'mro' in (dir(xdate)):
+        print(f'{xdate.mro()}')
     
     import numpy as np
     import pandas as pd
 
     typ = type(xdate)
+    
     if typ is datetime or typ is datetime.date:
         return datetime(xdate.year,xdate.month,xdate.day)
     elif (typ is np.ndarray):
         lst_date = [Get_Date(x) for x in xdate]
         return lst_date
-    elif (typ is pd._libs.tslibs.timestamps.Timestamp):
-        print('pd._libs.tslibs.timestamps.Timestamp')
+    elif (typ is pd._libs.tslibs.timestamps.Timestamp) and Is_Iterable(xdate):
+        #print('pd._libs.tslibs.timestamps.Timestamp ITERABLE')
         return [Get_Date(x) for x in xdate]
+    elif (typ is pd._libs.tslibs.timestamps.Timestamp):
+        #print('pd._libs.tslibs.timestamps.Timestamp')
+        return pd.to_datetime(xdate).date() 
     elif typ is pd.Series or typ is list:
         lst_date = [Get_Date(x[1]) for x in xdate.iteritems()]
         return lst_date
@@ -145,17 +153,24 @@ def Get_Date(xdate:datetime):
     elif typ is str:
         return datetime.strptime(xdate, '%Y-%m-%d')
     else:
-        print(type(xdate))
-        print(f'{xdate.mro}')
+        # print(type(xdate))
         return xdate
-        #return datetime(xdate.year, xdate.month, xdate.day)
-Linker = lambda sym,dtx: f"{sym}{Get_Date(dtx).strftime('%Y%m%d')}"
-
+        # return datetime(xdate.year, xdate.month, xdate.day)
+def Linker(sym:pd.Series, dtx:pd.Series):
+    if Is_Iterable(sym) and Is_Iterable(dtx) and len(sym)==len(dtx):
+        # pd.to_datetime(pp.Get_Date(df_bal_sheet.index[0])).strftime('%Y%m%d')
+        dates = [pd.to_datetime(Get_Date(x)).strftime('%Y%m%d') for x in dtx]
+        jnd = zip(sym,dates)
+        return [x[0]+x[1] for x in jnd]
+    else:
+        return None
 
 if __name__ == "__main__":
     # execute only if run as a script
     # if is_valid_url('https://www.youtube.com/watch?v=ucY6NwQTI3M&list=RDMMnQWFzMvCfLE&index=9'):
     #     print(urlparse.urlparse('https://www.youtube.com/watch?v=ucY6NwQTI3M&list=RDMMnQWFzMvCfLE&index=9'))
     #main()
+    print(Linker("a12344567","2012-12-2"))
     print(Get_Date())
+    print(Get_Date(datetime(2012,12,2)))
     print(Get_Qtr('2012-12-2'),Get_Qtr(datetime(2012,12,2)),Get_Date('2019-10-30'),Linker('AAL','2012-11-20'))

@@ -1,3 +1,6 @@
 .env
 .vscode/settings.json
 *.json
+.fake
+.ionide
+*.pyc
