@@ -1,5 +1,8 @@
+from calendar import month
 import pandas as pd
 import os.path as path
+import datetime
+from datetime import datetime
 # try:
 #     from urllib.parse import urlparse
 #     from urllib.request import request
@@ -14,6 +17,8 @@ import urllib.parse as urlparse
 import urllib.request as request
 
 def import_func(file_or_url):
+    """Private function to use the file extension to determine 
+    the Pandas import function to use"""
     # Locate the text at the last period '.'
     _, extn = path.splitext(file_or_url)
     extn_fns = {  '.csv':pd.read_csv
@@ -24,6 +29,7 @@ def import_func(file_or_url):
             }
     return extn_fns[extn]
 def is_valid_url(url):
+    """Determines if the URL is valid or not."""
     rslt = urlparse.urlparse(url)
     is_url = all([rslt.scheme, rslt.netloc, rslt.path])
     
@@ -41,6 +47,7 @@ def is_valid_url(url):
             
     return is_url_valid
 def apply_index(df, idx=None):
+    """Apply and index to a dataframe"""
     right_type = type(idx) == list or type(idx) == str
     idx_in_df = set(idx).issubset(set(df))
 
@@ -54,6 +61,7 @@ def apply_index(df, idx=None):
     return df
 
 def CreateDataFrame(file_name, idx=None, remove_nulls=True):
+    """Creates a DataFrame the way I like it."""
     file_name = file_name.strip()
     state = []
 
@@ -80,15 +88,35 @@ def CreateDataFrame(file_name, idx=None, remove_nulls=True):
 
     return df
 
+# Check if the object is a list or dictionary
 Is_Iterable = lambda objX: ('__getitem__' in dir(objX) or '__iter__' in dir(objX))
+# Split up the componets of a list of tuples
 unzip_list  = lambda zlst: list(zip(*zlst))
 
-from datetime import datetime
+
+# Get the Quarter, based on the date
+Qtr = lambda dtx: (dtx.month+2)//3
+# Get the Last Month of the Qtr
+Qtr_EOM = lambda dtx: Qtr(dtx) * 3
+
+# Let's put it all together
+def Last_Day_Qtr(dtx:datetime.date):
+    """Get the last day of the month in a Given Qtr"""
+    Qtr_Last_Day_LU = {1:31,2:30,3:30,4:31}
+
+    yr = dtx.year
+    m  = Qtr_EOM(dtx)
+    d  = Qtr_Last_Day_LU[ Qtr(dtx) ]
+    return datetime(yr,m,d)
+
+# Get the number of days from the End of Qtr to given date
+Days_2_EoQ = lambda dtx: (Last_Day_Qtr(dtx) - dtx).days
+
 def Get_Qtr(xdate:datetime):
     """ This function takes various datetime objects and returns the Quarter associated with the values passed in
         So for an array, it will return an array of quarters as string.  If a single value was passed the
         a single quarter will be returned."""
-
+    from calendar import monthrange
     import numpy as np
     typ = type(xdate)
     if typ is datetime or typ is datetime.date:
@@ -157,6 +185,7 @@ def Get_Date(xdate:datetime=None):
         return xdate
         # return datetime(xdate.year, xdate.month, xdate.day)
 def Linker(sym:pd.Series, dtx:pd.Series):
+    """Takes a Stock Symbol as a string and a date and returns a string in the format ABCYYYMMDD"""
     if Is_Iterable(sym) and Is_Iterable(dtx) and len(sym)==len(dtx):
         # pd.to_datetime(pp.Get_Date(df_bal_sheet.index[0])).strftime('%Y%m%d')
         dates = [pd.to_datetime(Get_Date(x)).strftime('%Y%m%d') for x in dtx]
@@ -170,7 +199,14 @@ if __name__ == "__main__":
     # if is_valid_url('https://www.youtube.com/watch?v=ucY6NwQTI3M&list=RDMMnQWFzMvCfLE&index=9'):
     #     print(urlparse.urlparse('https://www.youtube.com/watch?v=ucY6NwQTI3M&list=RDMMnQWFzMvCfLE&index=9'))
     #main()
-    print(Linker("a12344567","2012-12-2"))
+    dtx_lst = [datetime.date(2011, 1, 4), datetime.date(2011, 1, 5), datetime.date(2011, 1, 6), datetime.date(2011, 1, 7), datetime.date(2011, 1, 10),
+                datetime.date(2011, 1, 11), datetime.date(2011, 1, 12), datetime.date(2011, 1, 13), datetime.date(2011, 1, 14), datetime.date(2011, 1, 18)]
+    results = map(Days_2_EoQ,dtx_lst)
+
+    print(Days_2_EoQ(datetime(2011, 1, 12)))
+    print(datetime.now())
+    print(Qtr(datetime.now()))
+    print(datetime.now() + pd.tseries.offsets.MonthEnd(2))
     print(Get_Date())
     print(Get_Date(datetime(2012,12,2)))
     print(Get_Qtr('2012-12-2'),Get_Qtr(datetime(2012,12,2)),Get_Date('2019-10-30'),Linker('AAL','2012-11-20'))
