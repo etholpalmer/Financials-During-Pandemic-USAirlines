@@ -1,5 +1,5 @@
 # **Investigation on Valuation of  US Airline Industry in midst of Pandemic**
-![Airline Industry](Images/airlines.jpeg)
+![Airline Industry](Images/Airlines.jpeg)
 
 ---
 ## **Background**
