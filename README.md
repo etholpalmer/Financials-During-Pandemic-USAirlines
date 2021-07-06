@@ -28,7 +28,7 @@ To investigate the stock prices of airlines industry and comment on the valuatio
 ## **Collaborators**
 * [Ethol Palmer](https://github.com/etholpalmer)
 * [Ashweej Shenoy](https://github.com/ashweej18)
-* [John Mari Manghas](https://github.com/adobopeanuts)
+* [John Mari Mangahas](https://github.com/adobopeanuts)
 * [Monique Rowe](https://github.com/moniquerowe15)
 
 
@@ -43,13 +43,13 @@ To investigate into prices of stocks in airline industry, we have chosen top 3 s
 
 **Step 1:** Data Clearning & Manipulation
 
-1.  Collect stock prices of the airline stock for from 2011 to 2021.
-2.  Get Fundamentals for airline stock from their published quarterly income and balance sheet through API calls
+1. Collect stock prices of the airline stock for from 2011 to 2021.
+2. Get Fundamentals for airline stock from their published quarterly income and balance sheet through API calls
 3. Combine the stock price data along with the fundamental data 
 4. Calculate the Income Statement ratios - Gross Profit Margin, Operating Margin, Net Profit Margin to analyze the changes in values over times
 5. Calculate the Balance Sheet Ratios -Debt to Equity Ratio, Quick Ratio, Current Ratio, Interest Coverage Ratio 
 6. Calculate Valuation Ratios -P/E, P/B and P/S and also calculate ROE and understand how the ratios changed over time.
-7. Collect the airline industry data -Seat Miles, Passanger Traffic, Load Factor and clean the data
+7. Collect the airline industry data for Passenger Data, Flight Data, Passenger-Miles Data , Revenue Seat-Miles Data, Load Factor Data and clean the data
 8. Get the Employee Data, Revenue Mix data to analyze the trends in the data
 9. Write the cleaned data into CSV files to be used for visualization
 
