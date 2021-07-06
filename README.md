@@ -34,7 +34,29 @@ To investigate the stock prices of airlines industry and comment on the valuatio
 
 ---
 ## **Steps**
+To investigate into prices of stocks in airline industry, we have chosen top 3 stocks based on the market capitalization from NYSE ARCA Airline Index (NYSE: XAL) as proxy. 
 
+* Southwest Airlines(NYSE:LUV)
+* Delta Airlines (NYSE:DAL)
+* United Airlines (NYSE:UAL)
+
+
+**Step 1:** Data Clearning & Manipulation
+
+1.  Collect stock prices of the airline stock for from 2011 to 2021.
+2.  Get Fundamentals for airline stock from their published quarterly income and balance sheet through API calls
+3. Combine the stock price data along with the fundamental data 
+4. Calculate the Income Statement ratios - Gross Profit Margin, Operating Margin, Net Profit Margin to analyze the changes in values over times
+5. Calculate the Balance Sheet Ratios -Debt to Equity Ratio, Quick Ratio, Current Ratio, Interest Coverage Ratio 
+6. Calculate Valuation Ratios -P/E, P/B and P/S and also calculate ROE and understand how the ratios changed over time.
+7. Collect the airline industry data -Seat Miles, Passanger Traffic, Load Factor and clean the data
+8. Get the Employee Data, Revenue Mix data to analyze the trends in the data
+9. Write the cleaned data into CSV files to be used for visualization
+
+**Step 2** Data Visualization
+1. Load the cleaned Data from step 1 into Pandas Data frame
+2. Create visualization for ratios, stock prices and industry statistics 
+3. Using the Panel library build an interactive dashboard for all of the visualizations
 
 
 
@@ -56,12 +78,15 @@ To investigate the stock prices of airlines industry and comment on the valuatio
 
 ---
 ## **Data**
-
-
+* Stock Price Data from Alpaca API
+* Balance Sheet and Income Statement Data are sourced from SIMFIN API and [StockAnalysis](https://stockanalysis.com/) website
+* Air Traffic, Passengar Data, Load Factor, Seal Miles data sourced from [Bureau of Transporation Statistics](https://www.bts.gov/)
 
 ---
 ## **Code**
-
+* [Airline Consolidated](Airline_Consolidated.ipynb)
+* [Airline Industry Statistics](Airline_Industry_Stats.ipynb)
+* [Dashboard](presentation_panel.ipynb)
 
 
 ---
@@ -76,14 +101,8 @@ To investigate the stock prices of airlines industry and comment on the valuatio
 ---
 ## **References**
 * [Mckinsey Report on Airline Industry](https://www.mckinsey.com/industries/travel-logistics-and-infrastructure/our-insights/back-to-the-future-airline-sector-poised-for-change-post-covid-19)
-* https://www.nytimes.com/2020/03/23/business/coronavirus-china-masks.html
+* [NY Times -  US Needs China Masks, as acrimony grows](https://www.nytimes.com/2020/03/23/business/coronavirus-china-masks.html)
+* [Wikipedia - Impact of Covid 19 pandemic on Aviation ](https://en.wikipedia.org/wiki/Impact_of_the_COVID-19_pandemic_on_aviation#cite_note-The_U.S._needs_China's_masks-11)
 
 
 
-Monique
-
-Ashweej
-
-Ethol
-
-John
