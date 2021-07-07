@@ -9,7 +9,7 @@ There has been a substantial drop in demand for air travel as a result of travel
 
 On the other side, as passenger planes have been cancelled, the cost of shipping cargo has skyrocked. According to NY times article, cost of sending cargo across the Pacific Ocean tripled by late March 2020.  At the end of March 2020, cargo capacity was down by 35% compared to the previous year.
 
-US Government to suppor the airline in
+//Bailout
 
 //Virus spread and variants
 
@@ -55,7 +55,7 @@ To investigate into prices of stocks in airline industry, we have chosen top 3 s
 
 **Step 2** Data Visualization
 1. Load the cleaned Data from step 1 into Pandas Data frame
-2. Create visualization for ratios, stock prices and industry statistics using Matplotlib, Plotly Express and Holoviz
+2. Create visualization for ratios, stock prices and industry statistics 
 3. Using the Panel library build an interactive dashboard for all of the visualizations
 
 
@@ -103,9 +103,6 @@ To investigate into prices of stocks in airline industry, we have chosen top 3 s
 * [Mckinsey Report on Airline Industry](https://www.mckinsey.com/industries/travel-logistics-and-infrastructure/our-insights/back-to-the-future-airline-sector-poised-for-change-post-covid-19)
 * [NY Times -  US Needs China Masks, as acrimony grows](https://www.nytimes.com/2020/03/23/business/coronavirus-china-masks.html)
 * [Wikipedia - Impact of Covid 19 pandemic on Aviation ](https://en.wikipedia.org/wiki/Impact_of_the_COVID-19_pandemic_on_aviation#cite_note-The_U.S._needs_China's_masks-11)
-* [NY Times -Obstacles & Opportunities for Aviation Industry](https://www.nytimes.com/2020/04/29/business/smallbusiness/aviation-coronovirus-impact.html)
-* [NY Times -High Cost of Airline Bailout](https://www.nytimes.com/2021/03/17/business/dealbook/airline-bailouts-pandemic.html)
-* [Bloomberg -Why Airline Bailout couldn't prevent Airport Chaos](https://www.bloomberg.com/opinion/articles/2021-06-22/u-s-airline-bailouts-can-t-prevent-airport-chaos)
 
 
 
