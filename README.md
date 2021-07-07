@@ -9,16 +9,22 @@ There has been a substantial drop in demand for air travel as a result of travel
 
 On the other side, as passenger planes have been cancelled, the cost of shipping cargo has skyrocked. According to NY times article, cost of sending cargo across the Pacific Ocean tripled by late March 2020.  At the end of March 2020, cargo capacity was down by 35% compared to the previous year.
 
-US Government to suppor the airline in
+US Government had earmarked more than $50 Billion out of the Covid Relief Package for US airline payroll support. 
 
-//Virus spread and variants
+According to Bloomberg Covid Vaccine Tracker, as of July 07 2021, around 3.32 billion doses have been administered across 180 countries. In US, 332 million doses have given so far ie approx 51.8% population coverage.  While vaccines have proven to provide some kind of protection, it would take coordinated campaign to stop the pandemic and life to return to normal.
+
+![Vaccine](Images/Vaccine.png)
+(Source: Bloomberg.com)
 
 
+
+
+
+Meanwhile, the airline stock are telling a different story.
+The initial reaction of stock market to pandemic was drastic correction in prices of airline stocks.  By the end of 2021, the prices of airline stock has recovered to pre-pandemic levels.
 
 ![XAL](Images/XAL.png)
 (Source: Investing.com)
-
-The initial reaction of stock market to pandemic was drastic correction in prices of airline stocks.  By the end of 2021, the prices of airline stock has recovered to pre-pandemic levels.
 
 ---
 ## **Objective**
@@ -73,9 +79,6 @@ To investigate into prices of stocks in airline industry, we have chosen top 3 s
 9. SIMFIN API
 10. Jupyter Notebook
 
-
-
-
 ---
 ## **Data**
 * Stock Price Data from Alpaca API
@@ -106,6 +109,6 @@ To investigate into prices of stocks in airline industry, we have chosen top 3 s
 * [NY Times -Obstacles & Opportunities for Aviation Industry](https://www.nytimes.com/2020/04/29/business/smallbusiness/aviation-coronovirus-impact.html)
 * [NY Times -High Cost of Airline Bailout](https://www.nytimes.com/2021/03/17/business/dealbook/airline-bailouts-pandemic.html)
 * [Bloomberg -Why Airline Bailout couldn't prevent Airport Chaos](https://www.bloomberg.com/opinion/articles/2021-06-22/u-s-airline-bailouts-can-t-prevent-airport-chaos)
-
+* [Vox- Airline Bailouts ](https://www.vox.com/the-goods/2020/3/19/21186792/airline-bailouts-coronavirus-50-billion)
 
 
