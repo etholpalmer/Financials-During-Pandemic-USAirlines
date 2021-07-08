@@ -112,7 +112,7 @@ To investigate into prices of stocks in airline industry, we have chosen top 3 s
 ![SM2](Output/seat_miles_row2.png)
 
 4. **Load Factor**
-![load1](Output/loadfactor.png)
+![load1](Output/Loadfactor.png)
 
 5. **Labour**
 ![labor](Output/airline_emp_row1.png)
