@@ -1,5 +1,5 @@
 # **Investigation on Valuation of  US Airline Industry in midst of Pandemic**
-![Airline Industry](Images/Airlines.jpeg)
+![Airline Industry](Images/ready.png)
 
 ---
 ## **Background**
@@ -95,6 +95,37 @@ To investigate into prices of stocks in airline industry, we have chosen top 3 s
 ---
 ## **Output**
 
+1. **Passengers**
+![Pass1](Output/passengers_row1.png)
+![Pass2](Output/passnegers_row2.png)
+
+2. **Flights**
+![Flights1](Output/flights_row1.png)
+![Flights2](Output/flights_row2.png)
+
+3. **Passenger Miles**
+![PM1](Output/passenger_miles_row1.png)
+![PM2](Output/passenger_miles_row2.png)
+
+3. **Seat Miles**
+![SM1](Output/seat_miles_row1.png)
+![SM2](Output/seat_miles_row2.png)
+
+4. **Load Factor**
+![load1](Output/loadfactor.png)
+
+5. **Labour**
+![labor](Output/airline_emp_row1.png)
+
+6. **Financials**
+![fun1](Output/fundamentals_row1.png)
+![fun2](Output/fundamentals_row2.png)
+![fun3](Output/fundamentals_row3.png)
+![fun4](Output/fundamentals_row4.png)
+![fun5](Output/fundamentals_row5.png)
+
+7. **Dashboard**
+![Dashboard](Output/AirlineDashboard.png)
 
 
 ---
