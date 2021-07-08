@@ -40,7 +40,7 @@ To investigate the stock prices of airlines industry and comment on the valuatio
 
 ---
 ## **Steps**
-To investigate into prices of stocks in airline industry, we have chosen top 3 stocks based on the market capitalization from NYSE ARCA Airline Index (NYSE: XAL) as proxy. 
+To investigate into prices of stocks in airline industry, we have chosen top 3 stocks based on the market capitalization from NYSE ARCA Airline Index (NYSE: [XAL](https://www.nyse.com/quote/index/XAL)) as proxy. 
 
 * Southwest Airlines(NYSE:LUV)
 * Delta Airlines (NYSE:DAL)
@@ -110,5 +110,14 @@ To investigate into prices of stocks in airline industry, we have chosen top 3 s
 * [NY Times -High Cost of Airline Bailout](https://www.nytimes.com/2021/03/17/business/dealbook/airline-bailouts-pandemic.html)
 * [Bloomberg -Why Airline Bailout couldn't prevent Airport Chaos](https://www.bloomberg.com/opinion/articles/2021-06-22/u-s-airline-bailouts-can-t-prevent-airport-chaos)
 * [Vox- Airline Bailouts ](https://www.vox.com/the-goods/2020/3/19/21186792/airline-bailouts-coronavirus-50-billion)
+* [IATA Report - Airline Passenger Market Analysis](https://www.iata.org/en/iata-repository/publications/economic-reports/air-passenger-monthly-analysis---july-2020/)
+* [IATA Report - Economic Performance of Airline Industry](https://www.iata.org/en/iata-repository/publications/economic-reports/airline-industry-economic-performance-june-2020-report/)
+* [FRED - Data on Load Factor](https://fred.stlouisfed.org/series/LOADFACTOR)
+* [Bureau of Transporation Statistics](https://www.bts.gov/)
+* [Business Insider ](https://www.businessinsider.com/american-united-southwest-delta-cargo-sole-growth-area-2020-4)
+* [Seeking Alpha - Delta Airlines](https://seekingalpha.com/article/4418622-delta-air-lines-is-pandemic-proven-to-be-global-leader)
+* [Supplychain247 -AirCargo](https://www.supplychain247.com/article/no_swift_changes_for_air_cargo/air)
+* [Investopedia](https://www.investopedia.com/)
+* [Wikipedia](https://en.wikipedia.org/wiki/Main_Page)
 
 
