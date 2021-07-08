@@ -89,7 +89,7 @@ To investigate into prices of stocks in airline industry, we have chosen top 3 s
 ## **Code**
 * [Airline Consolidated](Airline_Consolidated.ipynb)
 * [Airline Industry Statistics](Airline_Industry_Stats.ipynb)
-* [Dashboard](presentation_panel.ipynb)
+* [Dashboard](Airline_Dashboard.ipynb)
 
 
 ---
