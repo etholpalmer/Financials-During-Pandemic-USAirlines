@@ -83,7 +83,7 @@ To investigate into prices of stocks in airline industry, we have chosen top 3 s
 ## **Data**
 * Stock Price Data from Alpaca API
 * Balance Sheet and Income Statement Data are sourced from SIMFIN API and [StockAnalysis](https://stockanalysis.com/) website
-* Air Traffic, Passengar Data, Load Factor, Seal Miles data sourced from [Bureau of Transporation Statistics](https://www.bts.gov/)
+* Passenger Number Data, Flight Numbers Data, Revenue Passenger-Miles Data, Available Seat-Miles Data, and Load Factor data sourced from [Bureau of Transporation Statistics](https://www.bts.gov/)
 
 ---
 ## **Code**
@@ -103,11 +103,11 @@ To investigate into prices of stocks in airline industry, we have chosen top 3 s
 ![Flights1](Output/flights_row1.png)
 ![Flights2](Output/flights_row2.png)
 
-3. **Passenger Miles**
+3. **Revenue Passenger-Miles**
 ![PM1](Output/passenger_miles_row1.png)
 ![PM2](Output/passenger_miles_row2.png)
 
-3. **Seat Miles**
+3. **Available Seat-Miles**
 ![SM1](Output/seat_miles_row1.png)
 ![SM2](Output/seat_miles_row2.png)
 
