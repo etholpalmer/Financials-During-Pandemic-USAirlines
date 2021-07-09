@@ -130,6 +130,31 @@ To investigate into prices of stocks in airline industry, we have chosen top 3 s
 
 ---
 ## **Conclusion**
+Airline Industry ranges low on industry attractiveness owing to high fixed costs, low switching cost, high rivalry among industry participants. To investigate the valuation of the industry, we chose NYSE ARCA Airline Index as a proxy for the industry.
+
+To deepen our analysis we chose 3 stocks -Southwest Airlines, Delta Airlines and United Airlines, which had highest market cap in the index.
+
+The stock prices,financial statement and passanger data, Seat miles, Load Factor, Flight Data and labor data were considered as metrics for evaluating the industry and data for these fundamental variables were collected for  10 year period starting from 2011 to 2020.
+
+ As expected due to travel restrictions and country wide lockdown, there has been significant reduction on the on all fundamental variables.  
+ 
+ Inspite of strong Vaccination Campaign, only about 52% of the US population is innoculated and the economy is yet operate at its full potential,but the stock prices of the index and stocks have reached pre pandemic levels.
+
+ Looking at Employement mix between Full time and Contractual positions have remained steady over time but the total no of employees has significantly dropped. US Government had to announce  several relief packages to save the Industry.
+
+Load Factor, Seat Miles, Revenue passenger miles are a fraction of pre pandemic levels. Revenue for 2021 Q1 has dropped by ~60% when compared to 2019 Q1. Net Income is marginally positive after several quarter of loss. QoQ EPS has reduced by more than 50%. Quick Ratio has improved significantly owing the high cash due bailout packages. P/E ratio is negative for United Airlines and Delta Airlines. P/S raitio pre pandemic was between 2-5x and currently is ranging between 7-18x.
+
+Based on the above, we feel the Stock prices are alteast on higher side on valuation.
+
+---
+## **Limitations**
+
+1. Apart from fundamentals which are primary driver of profitability of stocks, stock also move based expectation of the future. The analysis needs to incorporate the future expecations of Industry and Vaccination campaign data to better understand stock prices
+
+2. Absolute valuation based on expected future cash flows can be used to calculate estimated intrinsic value. 
+
+
+
 
 
 ---
